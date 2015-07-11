@@ -290,7 +290,7 @@ header .intro-text .intro-description {
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
-    letter-spacing: 1.7px;
+    letter-spacing: 1.5px;
     padding: 10px 5px;
     text-shadow: 1px 1px 1px rgba(65,65,64,0.2);
 }
@@ -299,15 +299,16 @@ header .intro-text .intro-description {
     text-align: center;
   }
   header .intro-text .intro-lead-in {
-    letter-spacing: 3px;
-    font-size: 30px;
+    letter-spacing: 1.7px;
+    font-size: 28px;
   }
   header .intro-text .intro-description {
-    letter-spacing: 5px;
-    font-size: 20px;
+    letter-spacing: 3px;
+    font-size: 18px;
   }
   header .intro-text .intro-heading {
-    letter-spacing: 4px;
+    letter-spacing: 2px;
+    font-size: 40px;
     margin-top: 0px;
   }
 }
