@@ -1,12 +1,14 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 body {
     overflow-x: hidden;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+    font-family: "Gotham-Book", "Montserrat", Helvetica, Arial, sans-serif;
+    font-weight: 400;
 }
 .text-muted {
     color: #777
 }
 .text-primary {
-    color: #E26529
+    color: #D94F20
 }
 p {
     font-size: 14px;
@@ -15,21 +17,38 @@ p {
 p.large {
     font-size: 16px
 }
-a,
-a:hover,
-a:focus,
-a:active,
-a.active {
-    outline: 0
+.white-link, .white-color {
+  color: #fff !important;
+}
+.justify-xs {
+  text-align: center;
+  text-align: justify;
+}
+@media screen and (min-width: 768px){
+  text-align: left;
+}
+.white-link:hover,
+.white-link:focus,
+.white-link:active,
+.white-link.active {
+  text-decoration: underline;
+  color: #fff;
 }
 a {
-    color: #E26529
+  outline: 0;
+  color: #D94F20;
+  -webkit-transition: 150ms ease-in-out; /* Safari */
+  transition: 150ms ease-in-out;
+  position: relative;
 }
 a:hover,
 a:focus,
 a:active,
 a.active {
-    color: #ECA061
+  outline: 0;
+  color: #ECA061;
+  top: -1px;
+  text-shadow: 1px 1px 4px rgba(65,65,64,0.4);
 }
 h1,
 h2,
@@ -37,7 +56,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+     font-family: "Gotham", "Montserrat", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 700
 }
@@ -52,25 +71,28 @@ h6 {
 }
 .btn-primary {
     color: #fff;
-    background-color: #E26529;
-    border-color: #E26529;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #D94F20;
+    border-color: #D94F20;
     text-transform: uppercase;
     font-weight: 700
 }
-.btn-primary:hover,
-.btn-primary:focus,
 .btn-primary:active,
-.btn-primary.active,
-.open .dropdown-toggle.btn-primary {
-    color: #fff;
-    background-color: #ECA061;
-    border-color: #f6bf01
+.btn-primary:hover,
+.btn-primary:focus {
+  color: #fff;
+  background-color: #D94F20;
+  border-color: #D94F20;
+  position: relative;
+  top: -2px;
+  -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 }
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
-    background-image: none
+  background-image: none;
+  -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
 }
 .btn-primary.disabled,
 .btn-primary[disabled],
@@ -87,18 +109,17 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-    background-color: #E26529;
-    border-color: #E26529
+    background-color: #D94F20;
+    border-color: #D94F20
 }
 .btn-primary .badge {
-    color: #E26529;
+    color: #D94F20;
     background-color: #fff
 }
 .btn-xl {
     color: #fff;
-    background-color: #E26529;
-    border-color: #E26529;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #D94F20;
+    border-color: #D94F20;
     text-transform: uppercase;
     font-weight: 700;
     border-radius: 3px;
@@ -134,66 +155,78 @@ fieldset[disabled] .btn-xl:active,
 .btn-xl.disabled.active,
 .btn-xl[disabled].active,
 fieldset[disabled] .btn-xl.active {
-    background-color: #E26529;
-    border-color: #E26529
+    background-color: #D94F20;
+    border-color: #D94F20
 }
 .btn-xl .badge {
-    color: #E26529;
+    color: #D94F20;
     background-color: #fff
 }
 .navbar-default {
-    background-color: #222;
+    color: #fff;
     border-color: transparent;
     display: none;
     opacity: 0;
 }
 .navbar-default .navbar-brand {
-  font-family: "Times new roman", Times, serif;
-  font-style: italic;
-  color: #E26529;
-  text-shadow: 1px 1px 2px rgba(65,65,64,0.2);
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus,
-.navbar-default .navbar-brand:active,
-.navbar-default .navbar-brand.active {
-    color: #ECA061
+.navbar-brand h1 {
+  margin:0;
+  color: #fff;
+  font-size: 28px;   
+  text-shadow: 1px 1px 2px rgba(65,65,64,0.4);
+}
+.navbar-default .navbar-brand:hover h1,
+.navbar-default .navbar-brand:focus h1,
+.navbar-default .navbar-brand:active h1,
+.navbar-default .navbar-brand.active h1{
+  color: #fff;
+}
+.navbar-address {
+  padding: 15px;
+  text-align: right;
+  letter-spacing: 2px;
+}
+.navbar-address .key-color {
+  color: #000;
 }
 .navbar-default .navbar-collapse {
     border-color: rgba(255, 255, 255, .02)
 }
 .navbar-default .navbar-toggle {
-    background-color: #E26529;
-    border-color: #E26529
+    background-color: #D94F20;
+    border-color: #D94F20
 }
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #fff
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background-color: #E26529
+    background-color: #D94F20
 }
 .navbar-default .nav li a {
-    font-family: "Times new roman", Times, serif;
     text-transform: uppercase;
     font-weight: 400;
     letter-spacing: 1px;
-    color: rgb(65,65,64);
+    color: #fff;
 }
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
-    color: #E26529;
+    color: #fff;
     outline: 0
 }
 .navbar-default .navbar-nav>.active>a {
     text-decoration: underline;
     background: transparent;
-    color: rgb(65,65,64);
+    color: #fff;
 }
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
     background-color: transparent;
-    color: #E26529;
+    color: #fff;
+
 }
 @media (min-width: 768px) {
     .navbar-default {
@@ -214,10 +247,13 @@ fieldset[disabled] .btn-xl.active {
         border-radius: 3px
     }
     .navbar-default.navbar-shrink {
-        background-color: rgba(255,255,255,0.9);
+        background-color: #D94F20;
         display: block;
         opacity: 1;
     }
+}
+.key-color {
+    color: #D94F20;
 }
 header {
     background-image: url(../img/header-bg.jpg);
@@ -231,58 +267,70 @@ header {
     color: #fff
 }
 header .intro-text {
-    padding-top: 100px;
-    padding-bottom: 50px
+    padding-top: 10px;
+    padding-bottom: 250px;
+    text-transform: uppercase;
 }
 header .intro-text .intro-lead-in {
-    font-family: "Times new roman", Times, serif;
-    font-style: italic;
+    font-weight: 600;
     font-size: 22px;
     line-height: 22px;   
-    color: #E26529;
-    margin-bottom: 25px;
-    text-shadow: 1px 1px 2px rgba(65,65,64,0.2);
+    color: #D94F20;
+    margin-bottom: 10px;
+    padding-left: 3px;
+    text-shadow: 1px 1px 1px rgba(65,65,64,0.2);
 }
 header .intro-text .intro-heading {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    font-weight: 700;
     font-size: 50px;
     line-height: 50px;
-    margin-bottom: 25px;
-    text-shadow: 1px 1px 2px rgba(65,65,64,0.4);
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 1px rgba(65,65,64,0.4);
 }
 header .intro-text .intro-description {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
-    margin-bottom: 25px;
-    text-shadow: 1px 1px 2px rgba(65,65,64,0.4);
+    letter-spacing: 1.7px;
+    padding: 10px 5px;
+    text-shadow: 1px 1px 1px rgba(65,65,64,0.2);
+}
+@media (max-width: 768px) {
+  header .intro-text { 
+    text-align: center;
+  }
+  header .intro-text .intro-lead-in {
+    letter-spacing: 3px;
+    font-size: 30px;
+  }
+  header .intro-text .intro-description {
+    letter-spacing: 5px;
+    font-size: 20px;
+  }
+  header .intro-text .intro-heading {
+    letter-spacing: 4px;
+    margin-top: 0px;
+  }
 }
 @media (min-width: 768px) {
     header .intro-text {
         padding-top: 250px;
-        padding-bottom: 150px
+        padding-bottom: 250px
     }
     header .intro-text .intro-lead-in {
-        font-style: italic;
         font-size: 40px;
         line-height: 40px;
-        margin-bottom: 15px
+        margin-bottom: 5px;
+        letter-spacing: 2.5px;
     }
     header .intro-text .intro-heading {
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        text-transform: uppercase;
-        font-weight: 700;
-        font-size: 75px;
+        font-size: 70px;
         line-height: 75px;
-        margin-bottom: 30px
+        margin-top: 5px;
+        margin-bottom: 10px;
     }
 }
 section {
-    padding: 100px 0
+    padding: 75px 0
 }
 section h2.section-heading {
     font-size: 40px;
@@ -291,16 +339,10 @@ section h2.section-heading {
 }
 section h3.section-subheading {
     font-size: 16px;
-    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: none;
     font-style: italic;
     font-weight: 400;
     margin-bottom: 75px
-}
-@media (min-width: 768px) {
-    section {
-        padding: 150px 0
-    }
 }
 .service-heading {
     margin: 15px 0;
@@ -358,7 +400,6 @@ section h3.section-subheading {
     margin: 0
 }
 #portfolio .portfolio-item .portfolio-caption p {
-    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: italic;
     font-size: 16px;
     margin: 0
@@ -425,7 +466,7 @@ section h3.section-subheading {
     height: 80px;
     position: absolute;
     z-index: 100;
-    background-color: #E26529;
+    background-color: #D94F20;
     color: #fff;
     border-radius: 100%;
     border: 7px solid #f1f1f1;
@@ -559,8 +600,9 @@ aside.clients img {
 }
 section#contact {
     background-color: #222;
-    background-image: url(../img/map-image.png);
-    background-position: center;
+    background-image: url(../img/nelson.jpg);
+    background-position: center right;
+    background-size: cover;
     background-repeat: no-repeat
 }
 section#contact .section-heading {
@@ -580,29 +622,25 @@ section#contact .form-group textarea.form-control {
     height: 236px
 }
 section#contact .form-control:focus {
-    border-color: #E26529;
+    border-color: #D94F20;
     box-shadow: none
 }
 section#contact::-webkit-input-placeholder {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     color: #bbb
 }
 section#contact:-moz-placeholder {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     color: #bbb
 }
 section#contact::-moz-placeholder {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     color: #bbb
 }
 section#contact:-ms-input-placeholder {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     color: #bbb
@@ -616,14 +654,12 @@ footer {
 }
 footer span.copyright {
     line-height: 40px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     text-transform: none
 }
 footer ul.quicklinks {
     margin-bottom: 0;
     line-height: 40px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     text-transform: none
 }
@@ -647,7 +683,7 @@ ul.social-buttons li a {
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
-    background-color: #E26529
+    background-color: #D94F20
 }
 .btn:focus,
 .btn:active,
@@ -674,7 +710,6 @@ ul.social-buttons li a:active {
 }
 .portfolio-modal .modal-content p.item-intro {
     margin: 20px 0 30px;
-    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: italic;
     font-size: 16px
 }
@@ -722,11 +757,11 @@ ul.social-buttons li a:active {
 }
 ::-moz-selection {
     text-shadow: none;
-    background: #E26529
+    background: #FADBC6
 }
 ::selection {
     text-shadow: none;
-    background: #E26529
+    background: #FADBC6
 }
 img::selection {
     background: 0 0
@@ -735,6 +770,6 @@ img::-moz-selection {
     background: 0 0
 }
 body {
-    webkit-tap-highlight-color: #E26529
+    webkit-tap-highlight-color: #FADBC6
 }
 
