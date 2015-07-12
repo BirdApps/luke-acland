@@ -273,7 +273,7 @@ header .intro-text {
 }
 header .intro-text .intro-lead-in {
     font-weight: 600;
-    font-size: 22px;
+    font-size: 24px;
     line-height: 22px;   
     color: #D94F20;
     margin-bottom: 10px;
@@ -299,16 +299,18 @@ header .intro-text .intro-description {
     text-align: center;
   }
   header .intro-text .intro-lead-in {
-    letter-spacing: 1.7px;
+    letter-spacing: 0;
     font-size: 28px;
+    margin-left: -5px;
   }
   header .intro-text .intro-description {
     letter-spacing: 3px;
     font-size: 18px;
   }
   header .intro-text .intro-heading {
-    letter-spacing: 2px;
-    font-size: 40px;
+    letter-spacing: 6px;
+    font-size: 36px;
+    margin-bottom: 0;
     margin-top: 0px;
   }
 }
@@ -318,13 +320,14 @@ header .intro-text .intro-description {
         padding-bottom: 250px
     }
     header .intro-text .intro-lead-in {
-        font-size: 40px;
+        font-size: 22px;
         line-height: 40px;
         margin-bottom: 5px;
         letter-spacing: 2.5px;
     }
     header .intro-text .intro-heading {
-        font-size: 70px;
+        font-size: 36px;
+        letter-spacing: 6px;
         line-height: 75px;
         margin-top: 5px;
         margin-bottom: 10px;
