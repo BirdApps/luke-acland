@@ -603,14 +603,12 @@ aside.clients img {
     margin: 50px auto
 }
 section#contact {
-    background-color: #222;
-    background-image: url(../img/nelson.jpg);
     background-position: center right;
     background-size: cover;
     background-repeat: no-repeat
 }
 section#contact .section-heading {
-    color: #fff
+    color: #222
 }
 section#contact .form-group {
     margin-bottom: 25px
